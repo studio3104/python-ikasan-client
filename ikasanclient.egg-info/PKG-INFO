@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ikasanclient
+Version: 0.0dev-r0
+Summary: post message to HipChat http gateway `ikasan`.
+Home-page: https://github.com/studio3104/python-ikasan-client
+Author: studio3104
+Author-email: studio3104.com@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

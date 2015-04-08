@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+ikasanclient/__init__.py
+ikasanclient.egg-info/PKG-INFO
+ikasanclient.egg-info/SOURCES.txt
+ikasanclient.egg-info/dependency_links.txt
+ikasanclient.egg-info/entry_points.txt
+ikasanclient.egg-info/not-zip-safe
+ikasanclient.egg-info/top_level.txt
