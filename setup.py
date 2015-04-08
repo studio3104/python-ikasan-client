@@ -1,7 +1,13 @@
 from setuptools import setup, find_packages
-import sys, os
+from pip.req import parse_requirements
+import sys, os, pip
 
 version = '0.0'
+
+requirements = [
+    str(requirement.req)
+    for requirement in parse_requirements('requirements.txt', session = pip.download.PipSession())
+]
 
 setup(name='ikasanclient',
       version=version,
@@ -17,10 +23,7 @@ setup(name='ikasanclient',
       packages=find_packages(exclude=['ez_setup', 'examples', 'tests']),
       include_package_data=True,
       zip_safe=False,
-      install_requires=[
-          # -*- Extra requirements: -*-
-          'requests',
-      ],
+      install_requires=requirements,
       entry_points="""
       # -*- Entry points: -*-
       """,
