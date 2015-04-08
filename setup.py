@@ -19,6 +19,7 @@ setup(name='ikasanclient',
       zip_safe=False,
       install_requires=[
           # -*- Extra requirements: -*-
+          requests,
       ],
       entry_points="""
       # -*- Entry points: -*-
