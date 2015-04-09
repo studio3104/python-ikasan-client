@@ -24,6 +24,7 @@ setup(name='ikasanclient',
       include_package_data=True,
       zip_safe=False,
       install_requires=requirements,
+      test_suite='ikasanclient',
       entry_points="""
       # -*- Entry points: -*-
       """,

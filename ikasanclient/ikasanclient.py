@@ -7,13 +7,13 @@ class IkasanClient:
         self.url = "http://%s:%d" % (host, port)
 
     def notice(self, channel, message, color = None, message_format = None):
-        self.__request('notice', channel, message, color, message_format)
+        return self.__request('notice', channel, message, color, message_format)
 
     def privmsg(self, channel, message, color = None, message_format = None):
-        self.__request('privmsg', channel, message, color, message_format)
+        return self.__request('privmsg', channel, message, color, message_format)
 
     def __request(self, method, channel, message, color, message_format):
-        r = requests.post(
+        return requests.post(
             "%s/%s" % (self.url, method),
             data = {
                 'channel': channel,
