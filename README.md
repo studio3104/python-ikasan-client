@@ -57,4 +57,4 @@ ikasan.privmsg('#chennel', 'message', **{ 'color': 'random', 'message_format': '
 ## TODO
 
 - support https
-- write tests
+- write more tests
